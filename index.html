@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa553613b7.js" crossorigin="anonymous"></script>
+
+    <!---->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+    <div class="logo"><h1>Front<span>Weather</span></h1></div>
+    <div class="busca"><input class='input' type="text"><button onclick="manaus()" class=".btn"><i class="fas fa-search"></i></button></div>
+
+<div class="wrap">
+    <div class="cidade"><h1>Hortolândia, BR</h1></div>
+    <div class="data">Sabado, 18 Dezembro 2021</div>
+    <div class="imagem">
+        <img src="icons/01d.png" alt="">
+    </div>
+    <div class="temperatura-atual">
+        <div>22</div>
+        <span>ºC</span>
+    </div>
+    <div class="clima"><h1>Nublado</h1></div>
+    <div class="minmax"><i class="fas fa-angle-down"></i> <div class="minima">19 ºC</div> <i class="fas fa-angle-up"></i> <div class="maxima">25ºC</div></div>
+    <div class="cards-wrap">
+        <div class="card">
+            <div class="title-card">Vento</div>
+            <div class="vento">20 km/h</div>
+        </div>
+        <div class="card">
+            <div class="title-card">Sensação</div>
+            <div class="sensacao">22 ºC</div>
+        </div>
+        <div class="card">
+            <div class="title-card">umidade</div>
+            <div class="humidade">70%</div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
