@@ -32,11 +32,6 @@ function coordResults(lat, long) {
             displayResults(response)
         });
 }
-/*
-search_button.addEventListener('click', function() {
-    searchResults(search_input.value)
-})
-*/
 
 function searchResults(city) {
     fetch(`${api.base}weather?q=${city}&lang=${api.lang}&units=${api.units}&APPID=${api.key}`)
@@ -60,6 +55,7 @@ function searchResults(city) {
 
 function manaus(){
     searchResults(search_input.value)
+    
 }
 
 search_input.addEventListener('keypress', enter)
@@ -136,31 +132,3 @@ function capitalizeFirstLetter(string) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-var data = new Date();
-hora = data.getHours();
-
-if(hora > 6 && hora < 18){
-    document.querySelector('body').classList.add('dia')
-}else{
-    document.querySelector('body').classList.add('noite')
-}
-*/
