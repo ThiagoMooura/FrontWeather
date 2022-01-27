@@ -42,7 +42,6 @@ function searchResults(city) {
             return response.json();
         })
         .catch(error => {
-           //alert(error)
            search_input.value=''
         })
         .then(response => {
@@ -97,6 +96,7 @@ function displayResults(weather) {
     document.querySelector('.vento').innerHTML = `${(Math.round(weather.wind.speed * 4.32))} Km/h`
 
     document.querySelector('.humidade').innerHTML = `${weather.main.humidity}%`
+    
 }
 
 function dateBuilder(d) {
